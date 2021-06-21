@@ -1,0 +1,171 @@
+*{
+	box-sizing: border-box;
+	outline: none;
+	cursor: url('../images/cursor1.png') 12 12, auto;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+body{
+	width: 98%;
+	background-image: url('../images/1.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	z-index: 0;
+}
+
+
+#clock{
+	
+	position: fixed;
+	top: 10px;
+	left: 40px;
+}
+
+#win_header{
+	display: none;
+	
+	 position: fixed;
+	 left: 42.5%;
+	 top: 30%;
+}
+
+#score_header{
+
+	 position: fixed;
+	 right: 30px;
+	 top: 10px;
+}
+
+#game_over_header{
+	display: none;
+	
+	 position: absolute;
+	 left: 40%;
+	 top: 30%;
+}
+
+#score_rate{
+	
+	list-style-type: none;
+	position: fixed;
+	right: 50px; top: 75px;
+	transition: all 1s;
+}
+
+#time_rate{
+	
+	list-style-type: none;
+	position: fixed;
+	top: 75px; left: 10px;
+	transition: all 1s;
+}
+
+#user{
+	text-align: center;
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	left: 42.5%;
+	top: 42%;
+	border-radius: 10px;
+	background-color: rgba(255,255,255,0.3);
+}
+
+#start_btn{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 45%;
+	top: 50%;
+	border-radius: 10px;
+	background-color: rgba(255,255,255,0.4);
+}
+
+#bg_btn{
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	left: 42.5%;
+	top: 63%;
+	border-radius: 10px;
+	background-color: rgba(255,255,255,0.4);
+}
+
+#difficulty{
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	left: 42.5%;
+	top: 75%;
+	border-radius: 10px;
+	background-color: rgba(255,255,255,0.4);
+}
+
+#pause_btn{
+	display: none;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 45%;
+	top: 45%;
+	border-radius: 50%;
+	background-color: rgba(255,255,255,0.4);
+	background-image: url('../images/play.png');
+	background-size: 100% 100%;
+	z-index: 99;
+}
+
+#paused{
+	display: none;
+	position: absolute;
+	left: 42.5%;
+	top: 30%;
+	z-index: 99;
+}
+
+#music_mute{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 20px;
+	height: 20px;
+	background-color: rgba(255,255,255,0.4);
+	background-image: url('../images/music.png');
+	background-size: 100% 100%;
+}
+
+#sound_mute{
+	position: fixed;
+	left: 20px;
+	top: 0px;
+	width: 20px;
+	height: 20px;
+	background-color: rgba(255,255,255,0.4);
+	background-image: url('../images/speaker.png');
+	background-size: 100% 100%;
+}
+
+#pause{
+	position: fixed;
+	left: 40px;
+	top: 0px;
+	width: 20px;
+	height: 20px;
+	background-color: rgba(255,255,255,0.4);
+	background-image: url('../images/pause.png');
+	background-size: 100% 100%;
+}
+
+#full_screen{
+	position: fixed;
+	left: 60px;
+	top: 0px;
+	width: 20px;
+	height: 20px;
+	background-color: rgba(255,255,255,0.4);
+	background-image: url('../images/fullscreen.png');
+	background-size: 100% 100%;
+}

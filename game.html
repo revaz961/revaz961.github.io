@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>site</title>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</body>
+</head>
+<body onclick="missClick()" >
+	
+	<h1 id="clock">00:00</h1>
+	<h1 id="score_header">score:0</h1>
+	<h1 id="game_over_header">Game Over</h1>
+	<h1 id="win_header">*-win-*</h1>
+
+	<ul id="score_rate">best score:
+		<li>0</li>
+		<li>0</li>
+		<li>0</li>
+	</ul>
+	<ul id="time_rate">best time:
+		<li>00 : 00</li>
+		<li>00 : 00</li>
+		<li>00 : 00</li>
+	</ul>
+
+	<input type="text" id="user" placeholder="enter username">
+
+	<button id="start_btn" onclick="start()">start</button>
+
+	<button id="bg_btn" onclick="bgChange()">change background</button>
+
+	<button id="difficulty" onclick="changeDifficulty()">easy</button>
+
+	<h1 id="paused">paused</h1>
+	<button id="pause_btn" onclick="pause()"></button>
+
+	<button id="music_mute" onclick="muteMusic();"></button>
+	<button id="sound_mute" onclick="muteSound();"></button>
+	<button id="pause" onclick="pause();"></button>
+	<button id="full_screen" onclick="changeScreenMode();"></button>
+
+	<script type="text/javascript" src="js/game.js"></script>
+</body>
+</html>
